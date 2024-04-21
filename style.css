@@ -1,0 +1,908 @@
+@font-face {
+  font-family: 'Roboto'; /*a name to be used later*/
+  src: url('./Roboto/Roboto-Regular.ttf'); /*URL to font*/
+}
+
+* {
+  font-family: 'Roboto';
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #282938;
+}
+
+/*====================================================================================================*/
+/*NAVIGATION*/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+    margin: 0 auto;
+
+    position: relative;
+    height: 90px;
+    max-width: 100%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
+
+}
+
+.container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+list-style: none;
+
+width: 100%;
+height: 52px;
+
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    margin-left:64px;
+    margin-right: 64px;
+    justify-content: space-between;
+}
+
+.navList a:link { 
+    text-decoration: none; 
+    color : black;
+} 
+.navList a:visited { 
+    text-decoration: none; 
+    color : black;
+} 
+.navList a:hover { 
+    text-decoration: none; 
+    color:blueviolet;
+} 
+.navList a:active { 
+    text-decoration: none; 
+    color:blueviolet;
+}
+
+.logo {
+    width: 140px;
+    height: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 32px;
+    padding-left: 0px;
+    
+}
+
+.navList {
+ display: flex;
+ font-size: 16px;
+ line-height: 24px;
+ column-gap: 32px;
+ justify-content: center;
+ text-align: center;
+ padding-top: 14px;
+ padding-bottom: 14px;
+    
+
+}
+
+.contact {
+  background-color: #fff;
+  color: #5e3bee;
+  align-items: center;
+  justify-content: center;
+  border: 1.33px solid #5e3bee;
+  padding: 18.7px;
+  border-radius: 5.33px;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.contact:hover {
+  background-color: #5E3BEE;
+  color: white;
+}
+
+.empty {
+  width: 200px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media only screen and (max-width: 767px)  {
+  nav {
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+}
+
+.navbar{
+  height: fit-content;
+}
+
+.contact {
+    padding-bottom: 1%;
+    margin-left: 0;
+}
+
+
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.logo {
+  margin-right: 0;
+}
+
+
+
+}
+/*==========================================================================================*/
+/*HEADER*/
+
+.header{
+  max-width: 100%;
+  height: 100%;
+  padding-left: 133.33px; 
+  padding-top : 85.33px; 
+  padding-right : 133.33px; 
+  padding-bottom :85.33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5FCFF;
+}
+.headerLeft{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  flex-direction: column;
+}
+.headerRight{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+.headerButton{
+  flex-direction: row;
+  padding-top: 53.3px;
+  font-size: 16px;
+  color: #fff;
+}
+.headerLeftText {
+  width: 100%;
+  flex-direction: column;
+  gap: 32px;
+}
+.productDesign {
+  color: #5e3bee;
+  font-size: 50px;
+  font-weight: bold;
+}
+.johnPhoto {
+  width: 700px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.textCreate{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto;
+  
+}
+.textButtonHeader {
+  width: 100%;
+  background-color: #5e3bee;
+  align-items: center;
+  justify-content: center;
+  padding: 18.7px;
+  color: #fff;
+  border-radius: 5.33px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 21.33px;
+  border: none;
+}
+.loremIpsumHeader {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: auto;
+    padding: 120px;
+  }
+  .johnPhoto {
+    padding-left: 25px;
+    width: 400px;
+    height: auto;
+    justify-content: center;
+  }
+  .textCreate {
+    font-size: 25px;
+  }
+  .productDesign{
+    font-size: 25px;
+  }
+  .loremIpsumHeader {
+    font-size: 13px;
+  }
+  .textButtonHeader {
+    width:100%; 
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    justify-content: center;
+  }
+}
+
+
+/*=========================================================================================*/
+/*SKILLS*/
+.mySkills {
+    max-width: 100%;
+    height: 100%;
+    padding-left: 85px;
+    padding-top: 90px;
+}
+  
+.mySkillsBoxes {
+    width: 95%;
+    padding-top: 6.5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+  
+.mySkillsBox {
+    width: 400px;
+    height: auto;
+    flex: 1; 
+    border-radius: 10.67px;
+    border: 0px 0px 4px 0px;
+    background-color: #F5FCFF; 
+    padding: 32px; 
+}
+
+.mySkillsBox:hover {
+    border-bottom: 4px solid rgba(94, 59, 238, 1)
+}
+
+.mySkillsBoxes .mySkillsBox {
+    margin-right: 2%;
+}
+.skillsIconImg{
+    border-radius: 10.67px;
+    background-color: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 53px;
+    width: 53px;
+}
+.loremIpsumSkills{
+    font-size: 24px;
+}
+.title{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+/*============================================================================================*/
+/*ABOUT*/
+.aboutJohn {
+    max-width: 100%;
+    height: 100%;
+    padding: 8% 5%;
+    gap: 5%;
+    display: flex;
+}
+
+.secondJohn {
+    width: 700px;
+    height: auto;
+}
+
+.headlineAbout {
+    width: 100%;
+    padding-top: 18%;
+}
+
+.aboutH3 {
+    width: 100%;
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(40, 41, 56, 1);
+}
+
+.aboutH2 {
+    width: 100%;
+    font-size: 3.2vw;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(40, 41, 56, 1);
+    line-height: 170%;
+}
+
+.loremIpsumAbout {
+    width: 98%;
+    font-size: 1.1vw;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(28, 30, 83, 1);
+    line-height: 170%;
+    padding-top: 1.6%;
+}
+
+.loremIpsumAbout2 {
+    width: 98%;
+    font-size: 1.1vw;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(28, 30, 83, 1);
+    line-height: 170%;
+    padding-top: 4%;
+}
+@media only screen and (max-width: 767px) {
+    .aboutJohn {
+      padding-top: 0px;
+      flex-direction: column; 
+      align-items: center; 
+      width: auto;
+    }
+    .secondJohn {
+    width: 400px;
+    height: auto;
+    justify-content: center;
+ 
+    }
+    .aboutText{
+      padding-top: 0px;
+      width: 60%;
+      padding: 50px;
+    }
+    .loremIpsumSkills {
+      font-size: 13px;
+    }
+    .loremIpsumAbout, .loremIpsumAbout2, .aboutH2, .aboutH3 {
+      font-size: 13px;
+    } 
+    .mySkillsBoxes{
+      display: flex;
+      flex-direction: column; 
+      row-gap: 10px;
+      width: fit-content;
+  
+    }
+    .mySkillsBox {
+      margin-left: 0px;
+      padding-left: 10px;
+      width: fit-content;
+    }
+  }
+
+
+  /*===========================================================================================*/
+  /*BLOG*/
+   .blogText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 85px;
+  }
+  .blogText2 {
+    display: flex; 
+    align-items: center; 
+    width: fit-content; 
+    height: 60px;
+    background-color: #E62872;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5.33px;
+    font-family: Roboto;
+    font-size: 21.33px;
+    border: none;
+  }
+
+  .blogText2 a {
+    color: white;
+    text-decoration: none;
+  }
+  .socialIcon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    padding-left : 85px;
+    padding-right: 85px;
+    align-self: stretch;
+    flex-direction: row;
+    gap: 55px;
+    text-align: left;
+    padding-bottom: 80px;
+  }
+  .card {
+    width: 80%;
+    height: auto;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 5.3px 32px rgba(0, 0, 0, 0.15);
+  }
+  .blogCard {
+    align-self: stretch;
+    position: relative;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .cardImg{
+    height: 400px;
+    width: auto;
+  }
+  .cardContent{
+    padding: 20px;
+  }
+  .vectorIcon {
+    height: 20px;
+    width: auto;
+    position: relative;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  .avatar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 10.7px;
+    font-size: 14px;
+    color: #000;
+  }
+  .bottomLine{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.3px solid #5e3bee;
+  }
+  .title2{
+    font-size:20px;
+  }
+
+  .loremIpsumBlog {
+    width: 98%;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(28, 30, 83, 1);
+    padding-top: 5px;
+    padding-bottom : 10px
+}
+@media only screen and (max-width: 767px) {
+    .blog-text{
+      padding: 20px;
+      flex-direction: column;
+      align-items: center; 
+      width: auto;
+    }
+    .blog-text-1{
+      padding-bottom: 20px;
+    }
+    .blog-text-2{
+      padding-top: 20px;
+      width: 20%;
+      height: 20px;
+    }
+    .title-2{
+      font-size:12px;
+    }
+  }
+/*=================================================================================================*/
+   /*TESTIMONIALS*/
+   .testimonialsExamples{
+    max-width: 100%;
+    height: 100%;
+    padding: 85px;
+    background-color: #F5FCFF;
+  }
+  .testimonialsCards{
+    display: flex;
+    width: 100%;
+    padding-top: 6.5%;
+    display: flex;
+    gap: 3%;
+    color: #1c1e53;
+    font-family: Roboto;
+    font-size: 21.33px;
+    padding-top : 80px;
+  }
+  .testimonialsCard{
+    width: 900px;
+    height: 300px;
+    border-radius: 8px;
+    border: 1.3px solid #006b6a;
+    
+  }
+  .starIcon{
+    padding: 20px;
+    width: 100px;
+  }
+  .loremIpsumTest{
+    font-size: 16px;
+    padding: 20px;
+  }
+  .testimonialsAvatar{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .avatarImageIcon{
+    width: 100px;
+    height: auto;
+    padding-left: 20px;
+  }
+  .testimonialsAvatarContent{
+    font-size: 16px;
+    padding-left: 20px;
+  }
+ 
+
+@media only screen and (max-width: 767px) {
+    .testimonialsExamples {
+      height: auto;
+      padding: 40px; 
+      align-items: center; 
+    }
+    .testimonialsCards {
+      flex-direction: column; 
+      align-items: stretch; 
+      gap: 20px; 
+    }
+    .testimonialsCard {
+      flex: 1; 
+      width: 80%; 
+    }
+    .starIcon {
+      width: 30%;
+    }
+    .loremIpsumTest {
+      font-size: 16px; 
+      padding: 5px; 
+    }
+    .testimonialsAvatar{
+      flex-direction: column;
+    }
+    .testimonialsAvatarPhoto {
+      width: 10%;
+      height: 10%; 
+    }
+}
+
+/*================================================================================================*/
+/*CONTACT*/
+.contactMe {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+}
+
+.titleContact {
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+.titleContact h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+.titleContact h2 {
+  font-size: 50px;
+  padding-top: 20px;
+  color: #000;
+  font-weight: bold;
+
+
+}
+
+.titleContact p {
+  font-size: 20px;
+  padding-top: 20px;
+  color: #000;
+
+}
+
+.formContainer {
+  margin-top: 4%;
+  width: 56%;
+  margin-left: 22%;
+}
+
+.formRow {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 2vw;
+  font-size: 1.2vw;
+}
+
+.component1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 2vw;
+  font-size: 1.2vw;
+}
+
+.component1:nth-child(1) {
+  margin-right: 5%;
+
+}
+
+.fname {
+  width: 26.2vw;
+  height: 3.5vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.lname {
+  width: 26.2vw;
+  height: 3.5vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.email {
+  width: 26.2vw;
+  height: 3.5vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.phone {
+  width: 26.2vw;
+  height: 3.5vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.topic {
+  width: 100%;
+  height: 3.5vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.mess {
+  width: 100%;
+  height: 13vw;
+  border-radius: 8px;
+  color: #282938;
+  border: 1.33px solid #5E3BEE;
+  font-size: 1.2vw;
+}
+
+.labelMessage {
+  margin-top: 0%;
+}
+
+.acceptLabel {
+  font-size: 1.1vw;
+  margin-left: 1%;
+  margin-top: 1.5%;
+
+}
+
+.formRow input[type="checkbox"] {
+  width: 1.2vw;
+  height: 1.2vw;
+  margin-top: 1.5%;
+}
+
+.btnSubmit {
+  width: 10vw;
+  height: 4vw;
+  background-color: #5E3BEE;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2vw;
+}
+
+.btnSubmit:hover {
+  background-color: white;
+  color: #5E3BEE;
+  border: 1px solid #5E3BEE;
+  cursor: pointer;
+}
+
+.formRow2 {
+  display: flex;
+  justify-content: center;
+}
+
+.mess {
+  padding-top: 1%;
+  padding-left: 0.5%;
+}
+
+/*=========================================================================================*/
+/*FOOTER*/
+.frame-icon {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 42.7px;
+}
+.facebook-icon {
+  width: 32px;
+  position: relative;
+  border-radius: 5.33px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content,
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.social-links {
+  width: 50%x;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.content {
+  justify-content: space-between;
+  width: 95%;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background-color: rgba(40, 41, 56, 0.55);
+  height: 1.3px;
+}
+.airdokan {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-links,
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.footer-links {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.row {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row a {
+  text-align: left;
+  font-size: 14px;
+}
+.credits,
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.credits {
+  align-self: stretch;
+  align-items: center;
+  gap: 42.7px;
+  font-size: 18.7px;
+}
+.footer {
+  max-width: 100%;
+  left: 0;
+  background-color: #f5fcff;
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 5% 2%;
+  gap: 106.7px;
+  color: #000;
+}
+
+.links a:link { 
+  text-decoration: none; 
+  color : black;
+} 
+.links a:visited { 
+  text-decoration: none; 
+  color : black;
+} 
+.links a:hover { 
+  text-decoration: none; 
+  color:blueviolet;
+} 
+.links a:active { 
+  text-decoration: none; 
+  color:blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+  .content, .links, .footer-links, .row{
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
